@@ -1,18 +1,24 @@
-
-function solution(N) {
-    const binary = Math.abs(N).toString(2);
-    let currentMaximum = 0;
-    let finalMaximum = 0;
+function solution(n) {
+    const binary = n.toString(2);
     
-    for (let i = 0; i < binary.length; i++) {
-        currentMaximum = 0;
-        
-        while (binary[i] === '0') {
-            ++currentMaximum && ++i;
-        }
-        
-        finalMaximum = Math.max(finalMaximum, currentMaximum)
+    let gap = 0;
+    let counter = 0;
+    let i = binary.length -1;
+    
+    while (binary[i] === '0') {
+        i--;
     }
     
-    return finalMaximum
+    for (;i >= 0; i--) {
+        if (binary[i] === '1') {
+            gap = Math.max(gap, counter)
+            counter = 0;
+        } else {
+            counter++;
+        }
+    }
+    
+    gap = Math.max(gap, counter)
+    
+    return gap
 }
