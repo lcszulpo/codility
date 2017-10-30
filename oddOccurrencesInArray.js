@@ -1,7 +1,7 @@
 function solution(a) {
     let result = 0;
     
-    for (i=0; i<a.length;i++) {
+    for (i = 0; i < a.length; i++) {
         result ^= a[i];
     }
     
