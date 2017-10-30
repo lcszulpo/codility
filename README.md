@@ -20,11 +20,12 @@ All these algorithms are considered painless:
 
   Assume that:
 
-  N is an integer within the range [1..2,147,483,647].
+  * N is an integer within the range [1..2,147,483,647].
+  
   Complexity:
 
-  expected worst-case time complexity is O(log(N));
-  expected worst-case space complexity is O(1).
+  * expected worst-case time complexity is O(log(N));
+  * expected worst-case space complexity is O(1).
 
 - `oddOccurrencesInArray.js`:
 
@@ -32,11 +33,11 @@ All these algorithms are considered painless:
 
   For example, in array A such that:
 
-    ```
-    A[0] = 9  A[1] = 3  A[2] = 9
-    A[3] = 3  A[4] = 9  A[5] = 7
-    A[6] = 9
-    ```
+  ```
+  A[0] = 9  A[1] = 3  A[2] = 9
+  A[3] = 3  A[4] = 9  A[5] = 7
+  A[6] = 9
+  ```
     
   the elements at indexes 0 and 2 have value 9,
   the elements at indexes 1 and 3 have value 3,
@@ -50,21 +51,22 @@ All these algorithms are considered painless:
 
   For example, given array A such that:
     
-    ```
-    A[0] = 9  A[1] = 3  A[2] = 9
-    A[3] = 3  A[4] = 9  A[5] = 7
-    A[6] = 9
-    ```
+  ```
+  A[0] = 9  A[1] = 3  A[2] = 9
+  A[3] = 3  A[4] = 9  A[5] = 7
+  A[6] = 9
+  ```
     
   the function should return 7, as explained in the example above.
 
   Assume that:
 
-  N is an odd integer within the range [1..1,000,000];
-  each element of array A is an integer within the range [1..1,000,000,000];
-  all but one of the values in A occur an even number of times.
+  * N is an odd integer within the range [1..1,000,000];
+  * each element of array A is an integer within the range [1..1,000,000,000];
+  * all but one of the values in A occur an even number of times.
+  
   Complexity:
 
-  expected worst-case time complexity is O(N);
-  expected worst-case space complexity is O(1), beyond input storage (not counting the storage required for input arguments).
-  Elements of input arrays can be modified.
+  * expected worst-case time complexity is O(N);
+  * expected worst-case space complexity is O(1), beyond input storage (not counting the storage required for input arguments).
+  * Elements of input arrays can be modified.
